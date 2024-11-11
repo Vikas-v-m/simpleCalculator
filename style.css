@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: antiquewhite; */
+    background-color: wheat ;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    font-size: x-large;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.upper {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: flex-end;
+}
+
+#settings {
+    align-self: flex-start;
+    position: relative;
+    top: 2%;
+    right: 1%;
+}
+
+#input-number {
+    height: 15%;
+    align-self: flex-end;
+    position: relative;
+    bottom: 3%;
+    left: 1%;
+    text-align: right;
+    border-style: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+#dashboard {
+    align-self: flex-start;
+    position: absolute;
+    left: 0.5%;
+    top: 1%;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.grid-holder {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    height: 50%;
+    gap: 0.5%;
+}
+
+.items {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.items:hover {
+    background-color: #808000 ;
+    color: #ffffff;
+    svg {
+        background-color: #808000; 
+        color: #ffffff;
+        fill: white;
+    }
+}
+
+.items:active {
+    background-color: #786800; 
+    color: #ffffff;
+    svg {
+        background-color: #786800;  
+        color: #ffffff;
+        fill: white;
+        }
+}
+
+
+/* remove the increment/decrement arrows added through number input */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ 
+
+
